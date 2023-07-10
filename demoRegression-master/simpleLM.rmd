@@ -43,3 +43,14 @@ summary.lm(MYCHEST)
 ```
 
 The residual standard error is 4.939 and its lower than the previous model which is 5.376 and is better.In addition the R-squared is 0.791 which is higher than the previous model which is  0.7524. So in ranking chest is above neck so we can conclude that chest is better than neck.
+
+
+```{r}
+MYHEADWTH <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(MYHEADWTH)
+summary.lm(MYHEADWTH)
+```
+
+As for the third model, the residual standard error is 7.32 which is worse. In addition the R-square is now 0.5489 which is also a decline from the previous model. In comparison to the other models the third one is at the bottom of the list. 
+
